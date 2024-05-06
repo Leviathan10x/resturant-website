@@ -22,21 +22,21 @@ export default function BookATable() {
   return (
     <>
       <Head>
-        <title>Restaurant Hukka Bukka</title>
+        <title>Restaurante PakMan Alitas</title>
       </Head>
 
       <main className="min-h-screen relative overflow-hidden">
         <section className="w-full flex flex-col lg:flex-row h-full min-h-screen">
           <div
             style={{
-              background: `url(https://images.unsplash.com/photo-1536822919364-de5612490f1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80)`,
+              background: require("../../assets/book-a-table.jpg"),
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}
             className="w-full lg:w-[50%] p-12 flex flex-col justify-between items-center min-h-screen h-full"
           >
             <Link href="/" className="font-semibold cursor-pointer">
-              Hukka Bukka
+              Pakman Alitas
             </Link>
             <div className="text-center">
               <h2 className="text-[#FACE8D] font-dancing text-[80px] leading-none">

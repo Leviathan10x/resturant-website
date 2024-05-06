@@ -3,8 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Hukka Bukka",
-  description: "Hukka Bukka Restaurant",
+  title: "Pakman Alitas",
+  description: "Pakman Alitas Villeta",
 };
 
 export default function RootLayout({
@@ -24,19 +24,19 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/pakman.jpg"
         />
         <link
           rel="icon"
-          type="image/png"
+          type="image/jpg"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/pakman.jpg"
         />
         <link
           rel="icon"
-          type="image/png"
+          type="image/jpg"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/pakman.jpg"
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>

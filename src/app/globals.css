@@ -27,27 +27,27 @@ body {
 }
 
 .slider .slide:nth-child(1) {
-  background-image: url("../assets/sliderimg1.png");
+  background-image: url("../assets/pakman.jpg");
   animation-delay: 0s;
 }
 
 .slider .slide:nth-child(2) {
-  background-image: url("../assets/sliderimg2.jpg");
+  background-image: url("../assets/pakman2.jpg");
   animation-delay: -2.5s;
 }
 
 .slider .slide:nth-child(3) {
-  background-image: url("../assets/sliderimg3.jpg");
+  background-image: url("../assets/pakman3.jpg");
   animation-delay: -5s;
 }
 
 .slider .slide:nth-child(4) {
-  background-image: url("../assets/sliderimg4.jpg");
+  background-image: url("../assets/pakman4.jpg");
   animation-delay: -7.5s;
 }
 
 .slider .slide:nth-child(5) {
-  background-image: url("../assets/sliderimg5.jpg");
+  background-image: url("../assets/pakman5.jpg");
   animation-delay: -10s;
 }
 
