@@ -2,7 +2,7 @@ import NavigationFooter from "@/components/NavigationFooter";
 import Link from "next/link";
 import { FC, MutableRefObject, useRef, useState } from "react";
 import Nav from "./Nav";
-import menuImg from "../../assets/menupage.jpg";
+import menuImg from "../../assets/menupage.png";
 import Feed from "./Feed";
 
 const MenuSection: FC = () => {
@@ -10,6 +10,8 @@ const MenuSection: FC = () => {
   const breakfastRef = useRef<HTMLDivElement | null>(null);
   const dinnerRef = useRef<HTMLDivElement | null>(null);
   const drinksRef = useRef<HTMLDivElement | null>(null);
+  const salsasRef = useRef<HTMLDivElement | null>(null);
+  const nsalsaRef = useRef<HTMLDivElement | null>(null);
 
   function scrollToSection(sectionId: MutableRefObject<HTMLDivElement | null>) {
     if (sectionId?.current) {
@@ -21,7 +23,7 @@ const MenuSection: FC = () => {
   }
 
   return (
-    <section className="w-full flex flex-col lg:flex-row h-full min-h-screen">
+    <section className="w-full flex flex-col lg:flex-row h-full min-h-screen ">
       <div
         style={{
           background: `url(${menuImg.src})`,
@@ -29,29 +31,33 @@ const MenuSection: FC = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
-        className="w-full lg:w-[50%] p-12 flex flex-col justify-between items-center min-h-[80vh] md:min-h-screen h-full"
+        className="w-full lg:w-[50%] p-12 -m-5 flex flex-col justify-between  items-center min-h-[80vh] md:min-h-screen h-full"
       >
-        <Link href="/" className="font-semibold cursor-pointer">
-          Hukka Bukka
+        <Link
+          href="/"
+          className=" text-white font-dancing text-[50px] md:text-[80px] leading-none cursor-pointer"
+        >
+          PakMan Alitas
         </Link>
-        <div className="text-center">
-          <h2 className="text-[#FACE8D] font-dancing text-[50px] md:text-[80px] leading-none">
-            Check Out
-          </h2>
-          <h1 className="font-medium text-[50px] md:text-[80px] leading-none">
-            Our Menus
-          </h1>
-        </div>
+
+        <div className="text-center   "></div>
 
         <NavigationFooter />
       </div>
-
+      <div className="text-center m-3">
+        <h2 className=" text-white font-dancing text-[30px] md:text-[50px] leading-none ">
+          La Receta Original
+        </h2>
+      </div>
       <div className="w-full lg:w-[50%] flex flex-col items-center h-screen">
         <Nav
           startersRef={startersRef}
           breakfastRef={breakfastRef}
           dinnerRef={dinnerRef}
           drinksRef={drinksRef}
+          salsasRef={salsasRef}
+          nsalsaRef={nsalsaRef}
+
           navigationHandler={scrollToSection}
         />
         <Feed
@@ -59,6 +65,8 @@ const MenuSection: FC = () => {
           breakfastRef={breakfastRef}
           dinnerRef={dinnerRef}
           drinksRef={drinksRef}
+          salsasRef={salsasRef}
+          nsalsaRef={nsalsaRef}
         />
       </div>
     </section>

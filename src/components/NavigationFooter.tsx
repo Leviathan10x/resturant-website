@@ -29,29 +29,14 @@ const NavigationFooter: React.FC = () => {
             </Link>
           </li>
           <li className="hidden sm:block">
-            <Link
-              href="restaurant"
-              className="h-[48px] cursor-pointer rounded-[100px] flex items-center justify-center p-[16px] ml-[14px] hover:bg-gray-100"
-            >
-              Restaurant
-            </Link>
-          </li>
-          <li className="hidden sm:block">
-            <Link
-              href="classes"
-              className="h-[48px] cursor-pointer rounded-[100px] flex items-center justify-center p-[16px] ml-[14px] hover:bg-gray-100"
-            >
-              Classes
-            </Link>
-          </li>
-          <li className="">
-            <Link
-              href="book-a-table"
-              className="h-[48px] font-medium text-[14px] cursor-pointer rounded-[100px] flex items-center justify-center p-[16px] ml-[14px] text-white bg-black uppercase"
-            >
-              Book A Table
-            </Link>
-          </li>
+              <Link href="/contact">
+                <div className="h-[48px] cursor-pointer rounded-[100px] flex items-center justify-center p-[16px] ml-[14px] hover:bg-gray-100">
+                  Contact
+                </div>
+              </Link>
+            </li>
+          
+          
         </ul>
       </div>
 
@@ -79,43 +64,8 @@ const NavigationFooter: React.FC = () => {
               </Link>
             </li>
 
-            <li className="mb-[16px] block md:hidden">
-              <Link href="/restaurant">
-                <div className="text-[32px] hover:text-gray-600 h-[48px] px-[10px] border-b border-transparent hover:border-gray-300">
-                  Restaurant
-                </div>
-              </Link>
-            </li>
 
-            <li className="mb-[16px] block md:hidden">
-              <Link href="/classes">
-                <div className="text-[32px] hover:text-gray-600 h-[48px] px-[10px] border-b border-transparent hover:border-gray-300">
-                  Classes
-                </div>
-              </Link>
-            </li>
-
-            <li className="mb-[16px]">
-              <Link href="/shop">
-                <div className="text-[32px] hover:text-gray-600 h-[48px] px-[10px] border-b border-transparent hover:border-gray-300">
-                  Shop
-                </div>
-              </Link>
-            </li>
-            <li className="mb-[16px]">
-              <Link href="/workshop">
-                <div className="text-[32px] hover:text-gray-600 h-[48px] px-[10px] border-b border-transparent hover:border-gray-300">
-                  Workshop
-                </div>
-              </Link>
-            </li>
-            <li className="mb-[16px]">
-              <Link href="/blog">
-                <div className="text-[32px] hover:text-gray-600 h-[48px] px-[10px] border-b border-transparent hover:border-gray-300">
-                  Blog
-                </div>
-              </Link>
-            </li>
+      
             <li className="mb-[16px]">
               <Link href="/contact">
                 <div className="text-[32px] hover:text-gray-600 h-[48px] px-[10px] border-b border-transparent hover:border-gray-300">

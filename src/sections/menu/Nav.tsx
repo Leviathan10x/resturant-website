@@ -6,6 +6,9 @@ interface IProps {
   breakfastRef: MutableRefObject<HTMLDivElement | null>;
   dinnerRef: MutableRefObject<HTMLDivElement | null>;
   drinksRef: MutableRefObject<HTMLDivElement | null>;
+  salsasRef: MutableRefObject<HTMLDivElement | null>;
+  nsalsaRef: MutableRefObject<HTMLDivElement | null>;
+
   navigationHandler: (ref: MutableRefObject<HTMLDivElement | null>) => void;
 }
 //-------------------------------------------------------
@@ -16,6 +19,8 @@ const Nav: FC<IProps> = ({
   breakfastRef,
   dinnerRef,
   drinksRef,
+  salsasRef,
+  nsalsaRef,
 }) => {
   return (
     <div className="min-h-[74px] w-full flex justify-center items-center">
@@ -23,26 +28,33 @@ const Nav: FC<IProps> = ({
         onClick={() => navigationHandler(startersRef)}
         className="font-light text-[#FACE8D]"
       >
-        Starters
+        Personales
       </button>
       <button
         onClick={() => navigationHandler(breakfastRef)}
-        className="font-light hover:text-[#FACE8D] text-white ml-[28px] md:ml-[48px]"
+        className="font-light hover:text-[#FACE8D] text-white ml-[20px] md:ml-[48px]"
       >
-        Breakfast
+        Familiares
       </button>
       <button
         onClick={() => navigationHandler(dinnerRef)}
-        className="font-light hover:text-[#FACE8D] text-white ml-[28px] md:ml-[48px]"
+        className="font-light hover:text-[#FACE8D] text-white ml-[20px] md:ml-[48px]"
       >
-        Dinner
+        Combos Junior
       </button>
       <button
         onClick={() => navigationHandler(drinksRef)}
-        className="font-light hover:text-[#FACE8D] text-white ml-[28px] md:ml-[48px]"
+        className="font-light hover:text-[#FACE8D] text-white ml-[20px] md:ml-[48px]"
       >
-        Drinks
+        Adicionales
       </button>
+      <button
+        onClick={() => navigationHandler(salsasRef)}
+        className="font-light hover:text-[#FACE8D] text-white ml-[20px]  md:ml-[48px]"
+      >
+        Bebidas
+      </button>
+      
     </div>
   );
 };
