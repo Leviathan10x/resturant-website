@@ -43,7 +43,7 @@ const MenuSection: FC = () => {
 
         <div className="text-center   "></div>
 
-        <NavigationFooter />
+        
       </div>
       <div className="text-center m-3">
         <h2 className=" text-white font-dancing text-[30px] md:text-[50px] leading-none ">

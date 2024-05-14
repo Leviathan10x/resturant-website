@@ -9,7 +9,7 @@ const WorkshopSection: FC = () => {
     <section className="w-full flex flex-col lg:flex-row h-full min-h-screen">
       <div
         style={{
-          background: require("../../assets/pakman.jpg"),
+          background: require("../../assets/pakman.webp"),
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
