@@ -5,6 +5,7 @@ import Nav from "./Nav";
 import menuImg from "../../assets/menupage.png";
 import Feed from "./Feed";
 
+
 const MenuSection: FC = () => {
   const startersRef = useRef<HTMLDivElement | null>(null);
   const breakfastRef = useRef<HTMLDivElement | null>(null);
