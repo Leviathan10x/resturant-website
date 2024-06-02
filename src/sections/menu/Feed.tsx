@@ -11,10 +11,13 @@ interface IProps {
   drinksRef: MutableRefObject<HTMLDivElement | null>;
   salsasRef: MutableRefObject<HTMLDivElement | null>;
   nsalsaRef: MutableRefObject<HTMLDivElement | null>;
+
+  navigationHandler: (ref: MutableRefObject<HTMLDivElement | null>) => void;
 }
 //---------------------------------------------
 
 const Feed: FC<IProps> = ({
+  navigationHandler,
   startersRef,
   breakfastRef,
   dinnerRef,
@@ -57,7 +60,7 @@ const Feed: FC<IProps> = ({
             onClick={() => toggleOptions(item.id)}
             className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
           >
-            <div>
+            <div className=" flex-shrink-0 ">
               <Image
                 width={90}
                 height={72}
@@ -139,6 +142,28 @@ const Feed: FC<IProps> = ({
                         Manzana 400ml
                       </p>
                     </div>
+                  </div>
+                  <div className="flex justify-end">
+                  <button
+                    onClick={() => navigationHandler(drinksRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Adicionales
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(salsasRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Bebidas
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(nsalsaRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Salsas
+                  </button>
                   </div>
                 </div>
               )}
@@ -159,7 +184,7 @@ const Feed: FC<IProps> = ({
             className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
             onClick={() => toggleOptions(item.id)}
           >
-            <div>
+            <div className=" flex-shrink-0 ">
               <Image
                 width={90}
                 height={72}
@@ -242,6 +267,28 @@ const Feed: FC<IProps> = ({
                       </p>
                     </div>
                   </div>
+                  <div className="flex justify-end">
+                  <button
+                    onClick={() => navigationHandler(drinksRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Adicionales
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(salsasRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Bebidas
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(nsalsaRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Salsas
+                  </button>
+                  </div>
                 </div>
               )}
             </div>
@@ -261,7 +308,7 @@ const Feed: FC<IProps> = ({
             className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
             onClick={() => toggleOptions(item.id)}
           >
-            <div>
+            <div className=" flex-shrink-0 ">
               <Image
                 width={90}
                 height={72}
@@ -344,6 +391,28 @@ const Feed: FC<IProps> = ({
                         Manzana 400ml
                       </p>
                     </div>
+                  </div>
+                  <div className="flex justify-end">
+                  <button
+                    onClick={() => navigationHandler(drinksRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Adicionales
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(salsasRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Bebidas
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(nsalsaRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Salsas
+                  </button>
                   </div>
                 </div>
               )}
@@ -367,8 +436,8 @@ const Feed: FC<IProps> = ({
             className="flex w-full mt-[12px] cursor-pointer hover:scale-95 duration-150"
             onClick={() => toggleOptions(item.id)}
           >
-            <div>
-              <Image
+            <div className=" flex-shrink-0 ">
+            <Image
                 width={90}
                 height={72}
                 src={item.pictureUrl}
@@ -376,6 +445,8 @@ const Feed: FC<IProps> = ({
                 className="rounded-[10px]"
               />
             </div>
+              
+            
 
             <div className="ml-[24px]">
               <div className="flex items-center justify-between">
@@ -423,6 +494,28 @@ const Feed: FC<IProps> = ({
 
                     
                   </div>
+                  <div className="flex justify-end">
+                  <button
+                    onClick={() => navigationHandler(drinksRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Adicionales
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(salsasRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Bebidas
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(nsalsaRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Salsas
+                  </button>
+                  </div>
                 </div>
               )}
             </div>
@@ -444,7 +537,7 @@ const Feed: FC<IProps> = ({
             className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
             onClick={() => toggleOptions(item.id)}
           >
-            <div>
+            <div className=" flex-shrink-0 ">
               <Image
                 width={90}
                 height={72}
@@ -536,6 +629,28 @@ const Feed: FC<IProps> = ({
                             </p>
                           </div>
                         </div>
+                        <div className="flex justify-end">
+                  <button
+                    onClick={() => navigationHandler(drinksRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Adicionales
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(salsasRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Bebidas
+                  </button>
+
+                  <button
+                    onClick={() => navigationHandler(nsalsaRef)}
+                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                  >
+                    Salsas
+                  </button>
+                  </div>
                       </div>
                     )}
 
@@ -557,6 +672,7 @@ const Feed: FC<IProps> = ({
             key={item.id}
             className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
           >
+            <div className=" flex-shrink-0 ">
             <Image
               width={90}
               height={72}
@@ -564,6 +680,8 @@ const Feed: FC<IProps> = ({
               alt={item.name}
               className="rounded-[10px]"
             />
+            </div>
+            
             <div className="w-full ml-[24px] pr-[20px]">
               <div className="w-full flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
@@ -590,6 +708,7 @@ const Feed: FC<IProps> = ({
             key={item.id}
             className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
           >
+            <div className=" flex-shrink-0 ">
             <Image
               width={90}
               height={72}
@@ -597,6 +716,8 @@ const Feed: FC<IProps> = ({
               alt={item.name}
               className="rounded-[10px]"
             />
+            </div>
+            
             <div className="w-full ml-[24px] pr-[20px]">
               <div className="w-full flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
@@ -625,6 +746,7 @@ const Feed: FC<IProps> = ({
             key={item.id}
             className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
           >
+            <div className=" flex-shrink-0 ">
             <Image
               width={90}
               height={72}
@@ -632,6 +754,8 @@ const Feed: FC<IProps> = ({
               alt={item.name}
               className="rounded-[10px]"
             />
+            </div>
+            
             <div className="w-full ml-[24px] pr-[20px]">
               <div className="w-full flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
@@ -656,6 +780,7 @@ const Feed: FC<IProps> = ({
             key={item.id}
             className="flex w-full mt-[16px] cursor-pointer hover:scale-95 duration-150"
           >
+            <div className=" flex-shrink-0 ">
             <Image
               width={90}
               height={72}
@@ -663,6 +788,8 @@ const Feed: FC<IProps> = ({
               alt={item.name}
               className="rounded-[10px]"
             />
+            </div>
+            
             <div className="w-full ml-[24px] pr-[20px]">
               <div className="w-full flex items-center justify-between">
                 <h1 className="text-[20px]">{item.name}</h1>
@@ -675,7 +802,7 @@ const Feed: FC<IProps> = ({
           </div>
         ))}
       </div>
-      <div className="w-full px-[10px] mt-[96px]">
+      <div ref={nsalsaRef} className="w-full px-[10px] mt-[96px]">
         <br></br>
         <h2 className="text-[#ebe2d5] font-dancing text-[54px] leading-none mb-[22px] text-center">
           Nuestras Salsas:

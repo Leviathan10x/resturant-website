@@ -42,18 +42,7 @@ const Nav: FC<IProps> = ({
       >
         Combos Junior
       </button>
-      <button
-        onClick={() => navigationHandler(drinksRef)}
-        className="font-light hover:text-[#FACE8D] text-white ml-[20px] md:ml-[48px]"
-      >
-        Adicionales
-      </button>
-      <button
-        onClick={() => navigationHandler(salsasRef)}
-        className="font-light hover:text-[#FACE8D] text-white ml-[20px]  md:ml-[48px]"
-      >
-        Bebidas
-      </button>
+     
       
     </div>
   );

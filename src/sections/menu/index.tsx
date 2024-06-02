@@ -68,6 +68,7 @@ const MenuSection: FC = () => {
           drinksRef={drinksRef}
           salsasRef={salsasRef}
           nsalsaRef={nsalsaRef}
+          navigationHandler={scrollToSection}
         />
       </div>
     </section>
