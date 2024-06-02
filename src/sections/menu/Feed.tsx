@@ -79,7 +79,7 @@ const Feed: FC<IProps> = ({
                 {item.description}
               </p>
               {showOptions[item.id] && (
-                <div className="options-container py-1 my-1">
+                <div className="options-container py-1 my-1 mx-auto">
                   <div>
                     <h4 className=" text-white text-lg text-center">Bebida:</h4>
 
@@ -143,24 +143,25 @@ const Feed: FC<IProps> = ({
                       </p>
                     </div>
                   </div>
-                  <div className="flex justify-end">
+                  <div className=" justify-stretch  ">
+                    
                   <button
                     onClick={() => navigationHandler(drinksRef)}
-                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                    className="font-light hover:text-[#000000] text-white ml-[5px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
                   >
                     Adicionales
                   </button>
 
                   <button
                     onClick={() => navigationHandler(salsasRef)}
-                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                    className="font-light hover:text-[#000000] text-white ml-[5px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
                   >
                     Bebidas
                   </button>
 
                   <button
                     onClick={() => navigationHandler(nsalsaRef)}
-                    className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
+                    className="font-light hover:text-[#000000] text-white ml-[5px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
                   >
                     Salsas
                   </button>
@@ -267,7 +268,7 @@ const Feed: FC<IProps> = ({
                       </p>
                     </div>
                   </div>
-                  <div className="flex justify-end">
+                  <div className="justify-stretch">
                   <button
                     onClick={() => navigationHandler(drinksRef)}
                     className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
@@ -392,7 +393,7 @@ const Feed: FC<IProps> = ({
                       </p>
                     </div>
                   </div>
-                  <div className="flex justify-end">
+                  <div className="justify-stretch">
                   <button
                     onClick={() => navigationHandler(drinksRef)}
                     className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
@@ -494,7 +495,7 @@ const Feed: FC<IProps> = ({
 
                     
                   </div>
-                  <div className="flex justify-end">
+                  <div className="justify-stretch">
                   <button
                     onClick={() => navigationHandler(drinksRef)}
                     className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
@@ -629,7 +630,7 @@ const Feed: FC<IProps> = ({
                             </p>
                           </div>
                         </div>
-                        <div className="flex justify-end">
+                        <div className="justify-stretch">
                   <button
                     onClick={() => navigationHandler(drinksRef)}
                     className="font-light hover:text-[#000000] text-white ml-[20px] md:ml-[48px] bg-blue-600 rounded-md px-2 m-1"
