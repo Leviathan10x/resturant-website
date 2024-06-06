@@ -26,19 +26,19 @@ const Nav: FC<IProps> = ({
     <div className="min-h-[74px] w-full flex justify-center items-center">
       <button
         onClick={() => navigationHandler(startersRef)}
-        className="font-light text-[#FACE8D]"
+        className="font-light text-[#fece00]"
       >
         Personales
       </button>
       <button
         onClick={() => navigationHandler(breakfastRef)}
-        className="font-light hover:text-[#FACE8D] text-white ml-[20px] md:ml-[48px]"
+        className="font-light hover:text-[#fece00] text-white ml-[20px] md:ml-[48px]"
       >
         Familiares
       </button>
       <button
         onClick={() => navigationHandler(dinnerRef)}
-        className="font-light hover:text-[#FACE8D] text-white ml-[20px] md:ml-[48px]"
+        className="font-light hover:text-[#fece00] text-white ml-[20px] md:ml-[48px]"
       >
         Combos Junior
       </button>

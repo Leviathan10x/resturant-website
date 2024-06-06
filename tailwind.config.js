@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
       dancing: ["Dancing Script", "cursive"],
       roboto: ["Roboto", "sans-serif"],
+      nine: ["Nine To FIve","sans-serif"]
     },
     extend: {},
   },

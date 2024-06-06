@@ -39,7 +39,7 @@ const Feed: FC<IProps> = ({
   return (
     <div className="mt-[80px] max-w-[628px] w-full overflow-hidden overflow-y-scroll">
       <div ref={startersRef} className="w-full px-[10px]">
-        <h1 className="text-[#EEE425] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#fece00] font-nine text-[64px] leading-none mb-[32px]">
           Personales
         </h1>
         <p className="text-[16px] text-white text-opacity-50 text-center">
@@ -47,13 +47,13 @@ const Feed: FC<IProps> = ({
           bebida !!!
         </p>
         <br></br>
-        <h2 className="text-[#ebe2d5] font-dancing text-[54px] leading-none mb-[22px]">
+        <h2 className="text-[#fece00] font-nine text-[54px] leading-none mb-[22px]">
           Combo Alas
         </h2>
         {menuData.personalAlas.map((item) => (
           <div
             style={{
-              border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
+              border: item.id === 3 ? `1px solid #fece00` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
@@ -172,13 +172,13 @@ const Feed: FC<IProps> = ({
           </div>
         ))}
         <br></br>
-        <h2 className="text-[#ebe2d5] font-dancing text-[54px] leading-none mb-[22px]">
+        <h2 className="text-[#fece00] font-nine text-[54px] leading-none mb-[22px]">
           Combo Costillas
         </h2>
         {menuData.personalCostillas.map((item) => (
           <div
             style={{
-              border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
+              border: item.id === 7 ? `1px solid #fece00` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
@@ -296,13 +296,13 @@ const Feed: FC<IProps> = ({
           </div>
         ))}
         <br></br>
-        <h2 className="text-[#ebe2d5] font-dancing text-[54px] leading-none mb-[22px]">
+        <h2 className="text-[#fece00] font-nine text-[54px] leading-none mb-[22px]">
           Combo Mixto
         </h2>
         {menuData.personalMixto.map((item) => (
           <div
             style={{
-              border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
+              border: item.id === 11 ? `1px solid #fece00` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
@@ -423,14 +423,14 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={breakfastRef} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#fece00] font-nine text-[64px] leading-none mb-[32px]">
           Familiares
         </h1>
         {menuData.Familiares.map((item) => (
           <div
             style={{
               border:
-                item.id === 2 ? `1px solid #FACE8D` : "1px solid transparent",
+                item.id === 15 ? `1px solid #fece00` : "1px solid transparent",
               borderRadius: 10,
             }}
             key={item.id}
@@ -525,13 +525,13 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={dinnerRef} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#fece00] font-nine text-[64px] leading-none mb-[32px]">
           Combos Junior
         </h1>
         {menuData.junior.map((item) => (
           <div
             style={{
-              border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
+              border: item.id === 20 ? `1px solid #fece00` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
@@ -661,13 +661,13 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={drinksRef} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#fece00] font-nine text-[64px] leading-none mb-[32px]">
           Adicionales
         </h1>
         {menuData.drinks.map((item) => (
           <div
             style={{
-              border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
+              border: item.id === 3 ? `1px solid #fece00` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
@@ -697,13 +697,13 @@ const Feed: FC<IProps> = ({
       </div>
 
       <div ref={salsasRef} className="w-full px-[10px] mt-[96px]">
-        <h1 className="text-[#FACE8D] font-dancing text-[64px] leading-none mb-[32px]">
+        <h1 className="text-[#fece00] font-nine text-[64px] leading-none mb-[32px]">
           Bebidas
         </h1>
         {menuData.bebidas.map((item) => (
           <div
             style={{
-              border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
+              border: item.id === 3 ? `1px solid #fece00` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
@@ -731,7 +731,7 @@ const Feed: FC<IProps> = ({
           </div>
         ))}
         <br></br>
-        <h2 className="text-[#ebe2d5] font-dancing text-[54px] leading-none mb-[22px]">
+        <h2 className="text-[#fece00] font-nine text-[54px] leading-none mb-[22px]">
           Jugos:
         </h2>
         <p className="text-[16px] text-white text-opacity-50 text-center">
@@ -741,7 +741,7 @@ const Feed: FC<IProps> = ({
         {menuData.Jugos.map((item) => (
           <div
             style={{
-              border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
+              border: item.id === 3 ? `1px solid #fece00` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
@@ -769,13 +769,13 @@ const Feed: FC<IProps> = ({
           </div>
         ))}
         <br></br>
-        <h2 className="text-[#ebe2d5] font-dancing text-[54px] leading-none mb-[22px]">
+        <h2 className="text-[#fece00] font-nine text-[54px] leading-none mb-[22px]">
           Nuestras limonadas:
         </h2>
         {menuData.limandas.map((item) => (
           <div
             style={{
-              border: item.id === 3 ? `1px solid #FACE8D` : "1px solid black",
+              border: item.id === 3 ? `1px solid #fece00` : "1px solid black",
               borderRadius: 10,
             }}
             key={item.id}
@@ -805,7 +805,7 @@ const Feed: FC<IProps> = ({
       </div>
       <div ref={nsalsaRef} className="w-full px-[10px] mt-[96px]">
         <br></br>
-        <h2 className="text-[#ebe2d5] font-dancing text-[54px] leading-none mb-[22px] text-center">
+        <h2 className="text-[#fece00] font-nine text-[54px] leading-none mb-[22px] text-center">
           Nuestras Salsas:
         </h2>
         <p className="text-[16px] text-white text-opacity-50 text-center">

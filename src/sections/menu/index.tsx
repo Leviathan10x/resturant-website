@@ -36,7 +36,7 @@ const MenuSection: FC = () => {
       >
         <Link
           href="/"
-          className=" text-white font-dancing text-[50px] md:text-[80px] leading-none cursor-pointer"
+          className=" text-white font-nine text-[50px] md:text-[80px] leading-none cursor-pointer"
         >
           PakMan Alitas
         </Link>
@@ -46,7 +46,7 @@ const MenuSection: FC = () => {
         
       </div>
       <div className="text-center m-3">
-        <h2 className=" text-white font-dancing text-[30px] md:text-[50px] leading-none ">
+        <h2 className=" text-white font-nine text-[30px] md:text-[50px] leading-none ">
           La Receta Original
         </h2>
       </div>
