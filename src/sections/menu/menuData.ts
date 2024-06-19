@@ -258,7 +258,7 @@ const menuData = {
       name: "Gaseosa 3 lts",
       description: "",
       pictureUrl: require("../../assets/bebidas/coca3l.jpg"),
-      price: "$8.500",
+      price: "$10.000",
     },
     {
       id: 4,
